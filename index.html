@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Александр Попов — 5 шагов к радиосвязи</title>
+  <meta name="description" content="Красивый и функциональный лонгрид в стиле 5 steps про Александра Степановича Попова." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Очень “дорогая” пара шрифтов: заголовки + текст -->
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Manrope:wght@400;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="На начало">
+      <span class="brand__mark" aria-hidden="true"></span>
+      <span class="brand__text">Popov</span>
+      <span class="brand__tag">5 steps</span>
+    </a>
+
+    <nav class="nav" aria-label="Навигация">
+      <a href="#step1">Биография</a>
+      <a href="#step2">Идея</a>
+      <a href="#step3">Прибор</a>
+      <a href="#step4">Хронология</a>
+      <a href="#step5">Наследие</a>
+      <a href="#sources">Источники</a>
+    </nav>
+
+    <button class="iconbtn" id="themeBtn" type="button" aria-label="Переключить тему">
+      <span aria-hidden="true">🌗</span>
+    </button>
+  </header>
+
+  <!-- Боковые “ступени” как у 5 steps -->
+  <aside class="stepsbar" aria-label="5 шагов">
+    <a class="stepdot" href="#step1"><span>1</span></a>
+    <a class="stepdot" href="#step2"><span>2</span></a>
+    <a class="stepdot" href="#step3"><span>3</span></a>
+    <a class="stepdot" href="#step4"><span>4</span></a>
+    <a class="stepdot" href="#step5"><span>5</span></a>
+  </aside>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="section hero reveal">
+      <div class="container hero__grid">
+        <div class="hero__text">
+          <p class="kicker">Российский учёный • физик • электротехник</p>
+          <h1 class="title">
+            Александр <span class="grad">Степанович</span> Попов
+          </h1>
+          <p class="lead">
+            История про то, как идеи электричества и эксперименты конца XIX века
+            привели к рождению радиосвязи. Формат — “5 шагов”, чтобы читать было легко.
+          </p>
+
+          <div class="hero__actions">
+            <a class="btn" href="#step4">Смотреть хронологию</a>
+            <a class="btn btn--ghost" href="#sources">Проверить источники</a>
+          </div>
+
+          <div class="hero__stats">
+            <div class="stat">
+              <div class="stat__n">1859–1906</div>
+              <div class="stat__t">годы жизни</div>
+            </div>
+            <div class="stat">
+              <div class="stat__n">7 мая 1895</div>
+              <div class="stat__t">ключевая демонстрация прибора</div>
+            </div>
+            <div class="stat">
+              <div class="stat__n">5 шагов</div>
+              <div class="stat__t">коротко, ясно, красиво</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__card">
+          <div class="card glass">
+            <h2 class="card__title">Оглавление</h2>
+            <ol class="toc">
+              <li><a href="#step1">Кто он</a></li>
+              <li><a href="#step2">Какая была идея</a></li>
+              <li><a href="#step3">Как работал прибор</a></li>
+              <li><a href="#step4">Хронология событий</a></li>
+              <li><a href="#step5">Наследие</a></li>
+            </ol>
+            <div class="mini">
+              <div class="mini__label">Фишки сайта</div>
+              <div class="mini__chips">
+                <span class="chip">адаптив</span>
+                <span class="chip">таймлайн</span>
+                <span class="chip">галерея</span>
+                <span class="chip">тема</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card subtle">
+            <p class="muted">
+              Интересный факт: 7 мая 1895 года Попов впервые публично показал радиоприёмник — эту дату в России
+              считают днём рождения радио.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STEP 1 -->
+    <section class="section reveal" id="step1">
+      <div class="container">
+        <div class="sectionhead">
+          <div class="badge">Шаг 1</div>
+          <h2>Кто он</h2>
+          <p class="muted">Короткая биография + контекст эпохи. 6–10 предложений, без “простыней”.</p>
+        </div>
+
+        <div class="grid2">
+          <article class="panel">
+            <h3>Кратко</h3>
+            <p>
+              Александр Степанович Попов — русский физик и инженер, один из пионеров радиосвязи.
+              Он родился в 1859 году на Урале и окончил Санкт‑Петербургский университет в 1883 году.
+            </p>
+            <p>
+              В 1880‑х он преподавал в Морской минной (торпедной) школе в Кронштадте и занимался практической
+              электротехникой. Эксперименты с электромагнитными волнами привели его к идее надёжного приёма сигналов.
+            </p>
+            <p>
+              В 1895 году Попов построил приёмник‑грозоотметчик и 7 мая публично продемонстрировал его в Петербурге.
+              В России этот показ считают началом радиосвязи, хотя в мировой истории первенство обычно отдают Маркони.
+            </p>
+          </article>
+
+          <aside class="panel panel--soft">
+            <h3>Факты (можно оформить как карточки)</h3>
+            <ul class="list">
+              <li><strong>Годы жизни:</strong> 1859–1906</li>
+              <li><strong>Образование:</strong> Санкт‑Петербургский университет, выпуск 1883</li>
+              <li><strong>Работа:</strong> Морская минная школа (Кронштадт)</li>
+              <li><strong>Ключевая дата:</strong> 7 мая 1895 — публичная демонстрация</li>
+              <li><strong>Должность:</strong> профессор, позже директор Электротехнического института (1901)</li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- STEP 2 -->
+    <section class="section reveal" id="step2">
+      <div class="container">
+        <div class="sectionhead">
+          <div class="badge">Шаг 2</div>
+          <h2>Идея</h2>
+          <p class="muted">Объясняем простыми словами: что такое сигнал и как его “поймать”.</p>
+        </div>
+
+        <div class="grid2">
+          <article class="panel">
+            <h3>Проблема</h3>
+            <p>
+              Нужно было научиться надёжно фиксировать слабые электромагнитные волны и превращать их в понятный сигнал:
+              звук, отметку на ленте, импульс телеграфа. В конце XIX века это было серьёзным технологическим вызовом.
+            </p>
+            <h3>Решение</h3>
+            <p>
+              Антенна принимала волну, чувствительный элемент (когерер) менял сопротивление, а реле включало звонок
+              или регистратор. Автоматический вибратор возвращал чувствительность, чтобы приёмник снова “слышал” сигнал.
+            </p>
+          </article>
+
+          <aside class="panel panel--soft">
+            <h3>Мини-схема</h3>
+            <pre class="code">Антенна → когерер → реле → сигнал/регистрация
+   │
+Заземление</pre>
+            <p class="muted">Короткий путь от радиоволны к фиксируемому импульсу.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- STEP 3 -->
+    <section class="section reveal" id="step3">
+      <div class="container">
+        <div class="sectionhead">
+          <div class="badge">Шаг 3</div>
+          <h2>Прибор</h2>
+          <p class="muted">Что именно показывал Попов и почему это стало важным шагом к радио.</p>
+        </div>
+
+        <div class="grid2">
+          <article class="panel">
+            <h3>Как это работало</h3>
+            <p>
+              Приёмник Попова использовал антенну и заземление, чтобы улавливать электромагнитные импульсы.
+              Когерер менял сопротивление под действием волны, реле срабатывало и запускало звонок или регистратор.
+              Вибратор автоматически встряхивал когерер, возвращая его в исходное состояние после каждого импульса.
+              Так прибор мог фиксировать отдельные сигналы и работать как грозоотметчик и радиоприёмник.
+            </p>
+
+            <div class="callout">
+              <div class="callout__title">Сильный блок “смысл”</div>
+              <p class="callout__text">
+                Это был переход от наблюдения волн к практическому приёму и регистрации сигналов связи.
+              </p>
+            </div>
+          </article>
+
+          <aside class="panel panel--soft">
+            <h3>Ключевые детали</h3>
+            <ul class="list">
+              <li>Прибор одновременно служил грозоотметчиком и приёмником радиосигналов.</li>
+              <li>Фиксация шла через звонок/регистратор, затем чувствительный элемент автоматически сбрасывался.</li>
+              <li>Контраст: тогда — искровые импульсы, сегодня — радио, Wi‑Fi и мобильные сети.</li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- STEP 4 -->
+    <section class="section reveal" id="step4">
+      <div class="container">
+        <div class="sectionhead row">
+          <div>
+            <div class="badge">Шаг 4</div>
+            <h2>Хронология</h2>
+            <p class="muted">Интерактивный таймлайн с фильтрами — выглядит современно и удобно.</p>
+          </div>
+
+          <div class="filters" role="group" aria-label="Фильтр событий">
+            <button class="fbtn is-active" data-filter="all" type="button">Все</button>
+            <button class="fbtn" data-filter="science" type="button">Наука</button>
+            <button class="fbtn" data-filter="public" type="button">Публично</button>
+            <button class="fbtn" data-filter="legacy" type="button">Наследие</button>
+          </div>
+        </div>
+
+        <div class="timeline" id="timeline">
+          <article class="titem" data-kind="public">
+            <div class="titem__year">1895</div>
+            <div class="titem__body">
+              <h3 class="titem__title">Показ прибора (7 мая)</h3>
+              <p>В Петербурге на заседании Русского физико‑химического общества Попов продемонстрировал приёмник
+                 радиосигналов. По свидетельствам, вскоре были переданы слова “Генрих Герц” азбукой Морзе.</p>
+            </div>
+          </article>
+
+          <article class="titem" data-kind="science">
+            <div class="titem__year">Июль 1895</div>
+            <div class="titem__body">
+              <h3 class="titem__title">Прибор в обсерватории</h3>
+              <p>Попов установил грозоотметчик в метеорологической обсерватории Лесного института в Петербурге,
+                 чтобы регистрировать атмосферные электрические разряды.</p>
+            </div>
+          </article>
+
+          <article class="titem" data-kind="science">
+            <div class="titem__year">Январь 1896</div>
+            <div class="titem__body">
+              <h3 class="titem__title">Публикация описания</h3>
+              <p>В статье Попов описал свой приёмник и предложил использовать его для приёма сигналов
+                 от искусственного источника колебаний.</p>
+            </div>
+          </article>
+
+          <article class="titem" data-kind="science">
+            <div class="titem__year">1896–1901</div>
+            <div class="titem__body">
+              <h3 class="titem__title">Развитие экспериментов</h3>
+              <p>Попов увеличивал дальность радиосвязи: к 1898 году — около 10 км, к 1899 — до 50 км.
+                 Его разработки использовали на флоте, а в 1901 году он стал профессором Электротехнического
+                 института и позднее его директором.</p>
+            </div>
+          </article>
+
+          <article class="titem" data-kind="legacy">
+            <div class="titem__year">7 мая</div>
+            <div class="titem__body">
+              <h3 class="titem__title">День радио</h3>
+              <p>В России 7 мая отмечают День радио — в память о демонстрации 1895 года.
+                 Праздник считается профессиональным днём работников связи.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- STEP 5 -->
+    <section class="section reveal" id="step5">
+      <div class="container">
+        <div class="sectionhead">
+          <div class="badge">Шаг 5</div>
+          <h2>Наследие</h2>
+          <p class="muted">Влияние на науку и технологию + память (музей/университет/дата).</p>
+        </div>
+
+        <div class="grid2">
+          <article class="panel">
+            <h3>Почему это важно</h3>
+            <p>
+              Попов показал, что электромагнитные волны можно не только наблюдать, но и использовать
+              для передачи информации. Его прибор связал научные открытия с практической связью
+              и стал одним из шагов к радиотелеграфу.
+            </p>
+            <p>
+              Сегодня те же принципы лежат в основе радио, навигации и мобильных сетей. Память о Попове
+              сохраняют музеи и профессиональный праздник: 7 мая в России — День радио.
+            </p>
+
+            <div class="quote">
+              <p>“Надеюсь, что мой прибор при дальнейшем усовершенствовании может быть применён для передачи сигналов на расстояние.”</p>
+              <span class="muted">— из выступления 7 мая 1895 года (перевод по смыслу)</span>
+            </div>
+          </article>
+
+          <aside class="panel panel--soft">
+            <h3>Галерея</h3>
+            <p class="muted">Портрет учёного, его приёмник и радиостанция начала XX века.</p>
+
+            <div class="gallery">
+              <button class="gitem" data-img="https://upload.wikimedia.org/wikipedia/commons/8/88/Alexander_Popov_portrait.jpg" data-alt="Портрет А. С. Попова">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Alexander_Popov_portrait.jpg" alt="Портрет А. С. Попова" loading="lazy">
+              </button>
+              <button class="gitem" data-img="https://upload.wikimedia.org/wikipedia/commons/b/bb/Popov_coherer_radio_receiver.jpg" data-alt="Приёмник Попова (когерер)">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/bb/Popov_coherer_radio_receiver.jpg" alt="Приёмник Попова (когерер)" loading="lazy">
+              </button>
+              <button class="gitem" data-img="https://upload.wikimedia.org/wikipedia/commons/1/14/Popov%27s_radiostation%2C_1901.jpg" data-alt="Радиостанция Попова, 1901">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/14/Popov%27s_radiostation%2C_1901.jpg" alt="Радиостанция Попова, 1901" loading="lazy">
+              </button>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOURCES -->
+    <section class="section reveal" id="sources">
+      <div class="container">
+        <div class="sectionhead">
+          <h2>Источники</h2>
+          <p class="muted">Список ссылок/книг. Это делает проект “научным” и повышает оценку.</p>
+        </div>
+
+        <div class="panel">
+          <ul class="sources">
+            <li><a href="https://www.britannica.com/biography/Aleksandr-Popov-Russian-engineer" target="_blank" rel="noopener">Encyclopaedia Britannica — Aleksandr Popov</a> — краткая биография, годы жизни и вклад в радио.</li>
+            <li><a href="https://www.prlib.ru/en/events/666685" target="_blank" rel="noopener">Presidential Library — Russia Celebrates Radio Day</a> — о демонстрации 7 мая 1895 года и истории праздника.</li>
+            <li><a href="https://ru.wikipedia.org/wiki/%D0%9F%D0%BE%D0%BF%D0%BE%D0%B2,_%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80_%D0%A1%D1%82%D0%B5%D0%BF%D0%B0%D0%BD%D0%BE%D0%B2%D0%B8%D1%87" target="_blank" rel="noopener">Википедия — Попов, Александр Степанович</a> — биография, ключевые даты и работы.</li>
+            <li><a href="https://en.wikipedia.org/wiki/Radio_Day" target="_blank" rel="noopener">Wikipedia — Radio Day</a> — справка о дате и традиции праздника.</li>
+            <li><a href="https://rustelecom-museum.ru/about/" target="_blank" rel="noopener">Центральный музей связи им. А. С. Попова</a> — официальный сайт музея и его коллекции.</li>
+            <li><a href="https://www.spbcult.ru/institutions/central-museum-of-communications/" target="_blank" rel="noopener">Портал «Культура Петербурга»</a> — описание музея и его экспозиции.</li>
+            <li><a href="https://commons.wikimedia.org/wiki/File:Alexander_Popov_portrait.jpg" target="_blank" rel="noopener">Wikimedia Commons — Alexander Popov portrait</a> — портрет учёного (изображение в галерее).</li>
+            <li><a href="https://commons.wikimedia.org/wiki/File:Popov_coherer_radio_receiver.jpg" target="_blank" rel="noopener">Wikimedia Commons — Popov coherer radio receiver</a> — фото приёмника Попова (когерер).</li>
+            <li><a href="https://commons.wikimedia.org/wiki/File:Popov%27s_radiostation,_1901.jpg" target="_blank" rel="noopener">Wikimedia Commons — Popov’s radiostation, 1901</a> — радиостанция Попова начала XX века.</li>
+          </ul>
+        </div>
+
+        <footer class="footer">
+          <p class="muted">© <span id="year"></span> • учебный проект</p>
+        </footer>
+      </div>
+    </section>
+  </main>
+
+  <!-- MODAL -->
+  <div class="modal" id="modal" aria-hidden="true" role="dialog" aria-label="Просмотр изображения">
+    <button class="modal__bg" id="modalBg" aria-label="Закрыть"></button>
+    <figure class="modal__content">
+      <img id="modalImg" alt="" />
+      <figcaption id="modalCap" class="muted"></figcaption>
+      <button class="modal__close" id="modalClose" aria-label="Закрыть">✕</button>
+    </figure>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
